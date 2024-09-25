@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2080a496-9cdd-488e-94a1-6597d7626d3f" name="Changes" comment="" />
+    <list default="true" id="2080a496-9cdd-488e-94a1-6597d7626d3f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Homework#2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,11 +34,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.34.executor": "Run",
+    "Python.342.executor": "Run",
+    "Python.35.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/GT00020/Downloads/Telegram Desktop/pythonProjectH1"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\GT00020\Desktop\HUb\HomeworkVC\pythonProject1" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -53,5 +63,16 @@
       <updated>1726580598160</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
