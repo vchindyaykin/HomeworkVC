@@ -21,16 +21,17 @@ for line in field:
 # 2. Написать свой декоратор для любой функции в client
 import time
 
-def test_time(func):
-    def jopper(*args):
+def test_time(func):    
+    def jopper(*args, **kwargs):
         st = time.time()
-        func()
+        result = func(*args, **kwargs)
         et = time.time()
         dt = et - st
         print(f"Время работы функции: {dt} сек")
-        func()
-    return jopper()
-# Данный декоратор также дублируется в client.py
+        return result
+
+    return jopper
+# Данный декоратор также дублируется в HomeWork#4.lib.client.client.py. Также добавил задержку по времени в функцию create_task для наглядности отработки декоратора
 
 # 3. Необходимо написать функцию, которая разбивает предложения на слова и возвращает список слов.
 # Далее необходимо написать под неё декоратор, который форматирует список слов в верхний регистр и возвращает их
