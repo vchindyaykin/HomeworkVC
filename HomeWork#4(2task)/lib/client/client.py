@@ -1,17 +1,25 @@
 import datetime
+import time
 
 from lib.achievement_manager.model import AchievmentManager
+from lib.decorators import Decs
 from lib.task_manager.dataclasses import Task
 from lib.task_manager.model import TaskManager
 
 
 class App(AchievmentManager, TaskManager):
+
+    @Decs.test_time
+    @Decs.log_create_task
     def create_task(
             self,
             name: str,
             priority: str,
-            deadline: datetime.datetime,
+            deadline: datetime.datetime | None,
+            delay: int = 5 #Время задержки
     ) -> Task:
+        time.sleep(delay) #Сделал задержку для наглядности работы декоратора домашки
+
         if not self._TASKS:
             self._add_achievement('ach_add_first_task')
         task = Task(
@@ -20,8 +28,6 @@ class App(AchievmentManager, TaskManager):
             deadline=deadline,
         )
         self._add_task(task)
-        self._TASKS_COUNT += 1
-        self.check_achievement_for_five_tasks()
         return task
 
     def get_achievements(self):
