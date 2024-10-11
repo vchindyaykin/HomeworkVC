@@ -22,7 +22,7 @@ class Decs:
             # )
         return wrapper  # Тут как раз мы и возвращаем функцию-обёртку
 
-    #Декоратор для домашки
+    #Декоратор для домашки #5
     def test_time(func):
         def jopper(*args, **kwargs):
             st = time.time()
