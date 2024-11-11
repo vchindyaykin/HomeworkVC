@@ -1,7 +1,7 @@
 import requests
 import json
 from random import randint
-from decorator import print_status_code
+from .decorator import print_status_code
 
 class PetMethod:
     URL = "https://petstore.swagger.io/v2/pet"
@@ -39,6 +39,11 @@ class PetMethod:
         if response.status_code != 200:
             return None, response.status_code
         return response.json(), response.status_code
+
+    def delete_pet(self, pet_id: int):
+        url = f"{self.URL}/{pet_id}"
+        response = requests.delete(url=url)
+        return response.status_code
 
     @staticmethod
     def write_to_json(data, file_name="my_pet.json"):

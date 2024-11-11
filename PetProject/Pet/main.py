@@ -11,6 +11,8 @@ pet_id, status_code = pet_shop.add_pet(
     tag= 'little'
 )
 
+pet_shop.delete_pet(pet_id=pet_id)
+
 if status_code == 200:
     print("Питомец добавлен с ID:", pet_id.get("id"))
 
