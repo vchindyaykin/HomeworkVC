@@ -5,7 +5,7 @@ from GostTeam.page.gostteam_page import GostTeamPage
 
 @pytest.fixture
 def browser():
-    driver = webdriver.Chrome()
+    driver = webdriver.Firefox()
     yield driver
     driver.quit()
 
